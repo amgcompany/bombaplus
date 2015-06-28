@@ -1,0 +1,3212 @@
+@font-face { font-family: Segoe UI; src: url('segoeuil.ttf'); }
+body, html {
+	background:#e4e4e4;
+	padding:0;
+	margin:0;
+	font-size:16px;
+	font-family: Tahoma, sans-serif;
+	color:#fff;
+}
+#header {
+	height:85px;
+	width:100%;
+	background:#4f585e;
+}
+#brand {
+	font-family:sans-serif;
+	font-size:30px;
+	float:left;
+	padding-left:5%;
+	padding-top:20px;
+}
+.subtitle {
+	font-size:15px;
+}
+.home_nav {
+	width:100%;
+	text-align:center;
+}
+.home_nav ul {
+	float:right;
+	padding-right:5%;
+}
+.home_nav li {
+	display:inline;
+	list-style-type:none;
+	padding-left:10px;
+}
+.home_nav a {
+	text-decoration:none;
+	font-family: sans-serif;
+	padding:10px;
+	color:#999;
+}
+.home_nav li input {
+	background:none;
+	border:0;
+}
+.reg_button {
+	background:url('/imgs/index/reg_button.png') no-repeat;
+	width:140px;
+	height:35px;
+	color:#fff;
+	float:left;
+	margin-right:10px;
+}
+.login_button {
+	background:url('/imgs/index/login_button.png') no-repeat;
+	width:116px;
+	height:35px;
+	color:#fff;
+	float:left;
+}
+.sucreg {
+	background:rgb(64, 199, 102);
+	width:440px;
+	border-radius:5px;
+	margin:0 auto;
+	padding-bottom:10px;
+	padding-top:10px;
+	margin-bottom:10px
+}
+.wrong_login {
+	background:rgb(199, 64, 64);
+	width:440px;
+	border-radius:5px;
+	margin:0 auto;
+	padding-bottom:10px;
+	padding-top:10px;
+	margin-bottom:10px;
+}
+.reg_button input {
+	width:140px;
+	height:35px;
+	color:#fff;
+	font-size:16px;
+}
+.login_button input {
+	width:116px;
+	height:35px;
+	color:#fff;
+	font-size:16px;
+}
+/* LOGIN FORM DESIGN */
+.login_top {
+	background:url('/imgs/index/login_top.png') no-repeat;
+	width:490px;
+	height:66px;
+}
+.login_middle {
+	background:url('/imgs/index/login_middle.png') repeat-y;
+	width:490px;
+}
+.login_bottom {
+	background:url('/imgs/index/login_bottom.png') no-repeat;
+	width:490px;
+	height:8px;
+}
+.login_title {
+	font-size:16px;
+	text-align:center;
+	padding-top:5px;
+}
+.login_icon {
+	background:url('/imgs/index/login_title_icon.png') no-repeat;
+	width:30px;
+	height:30px;
+	margin:0 auto;
+	margin-top:5px;
+}
+.login_middle form input {
+	background:none;
+	border:0;
+}
+.login_forms {
+	padding-top:25px;
+	text-align:center;
+}
+.login_username {
+	background:url('/imgs/index/username_input.png') no-repeat;
+	width:439px;
+	height:27px;
+	margin:0 auto;
+}
+.login_password {
+	background:url('/imgs/index/password_input.png') no-repeat;
+	width:439px;
+	height:27px;
+	margin:0 auto;
+	margin-top:10px;
+}
+.login_enter_button {
+	background:url('/imgs/index/login_enter_button.png') no-repeat;
+	width:439px;
+	height:27px;
+	margin:0 auto;
+	margin-top:10px;
+}
+.login_username input {
+	width:410px;
+	height:24px;
+	margin-left:30px;
+}
+.login_password input {
+	width:410px;
+	height:24px;
+	margin-left:30px;
+}
+.login_enter_button input {
+	width:439px;
+	height:27px;
+	text-align:center;
+	color:#fff;
+}
+.forgotten_password  {
+	text-decoration:none;
+	color:#858282;
+	font-size:12px;
+}
+#login_form_overlay, #reg_form_overlay {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.6);
+	z-index: 100;
+	color:#fff;
+	visibility:hidden;
+}
+#login_form , #reg_form{
+	position:fixed;
+	top: 30%;
+	left: 50%;
+	margin-top: -100px;
+	margin-left: -250px;
+}
+.pgzoomclose {
+	position: absolute;
+	right: 0;
+	top: 0;
+	-webkit-border-bottom-left-radius: 3px;
+	-moz-border-radius-bottomleft: 3px;
+	border-bottom-left-radius: 3px;
+	background-position: 100% 50%;
+	width: 52px;
+	height: 52px;
+	background-image: url('/imgs/index/zoom-icons.gif');
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	overflow: hidden;
+	text-indent: -5000px;
+	z-index: 1011;
+}
+/* END OF LOGIN FORM DESIGN */
+
+/* SIGN UP DESIGN */
+.reg_top {
+	background:url('/imgs/index/reg_top.png') no-repeat;
+	width:490px;
+	height:66px;
+}
+.reg_middle {
+	background:url('/imgs/index/login_middle.png') repeat-y;
+	width:490px;
+}
+.reg_bottom {
+	background:url('/imgs/index/login_bottom.png') no-repeat;
+	width:490px;
+	height:8px;
+}
+.reg_title {
+	font-size:16px;
+	text-align:center;
+	padding-top:5px;
+}
+.reg_icon {
+	background:url('/imgs/index/reg_title_icon.png') no-repeat;
+	width:30px;
+	height:30px;
+	margin:0 auto;
+	margin-top:5px;
+}
+.reg_middle form input {
+	background:none;
+	border:0;
+}
+.reg_enter_button {
+	background:url('/imgs/index/reg_enter_button.png') no-repeat;
+	width:439px;
+	height:27px;
+	margin:0 auto;
+	margin-top:10px;
+}
+.reg_enter_button input {
+	width:439px;
+	height:27px;
+	text-align:center;
+	color:#fff;
+}
+.reg_email {
+	background:url('/imgs/index/email_input.png') no-repeat;
+	width:439px;
+	height:27px;
+	margin:0 auto;
+	margin-top:10px;
+}
+.reg_email input {
+	width:410px;
+	height:24px;
+	margin-left:30px;
+}
+.error {
+	width:439px;
+	color:red;
+	text-align:left;
+	margin:0 auto;
+	padding-top:4px;
+}
+/* END OF SIGN UP DESIGN */
+/* QUOTE PIC STYLE */
+#quote_pic {
+	background:url('/imgs/index/quote_pic.png') no-repeat center;
+	height:389px;
+	margin:0 auto;
+}
+.quote_container {
+	/*position:fixed;
+	top: 15%;
+	left: 10%;
+	font-size:42px;*/
+	width:90%;
+	margin:0 auto;
+	padding-top:5%;
+	font-size:42px;
+}
+.quote_top {
+	font-family:Segoe UI, Tahoma;
+	background:rgba(81,95,104,0.8);
+	height:60px;
+	text-align:center;
+	padding-left:10px;
+	padding-right:10px;
+}
+.quote_bottom {
+	font-family:Segoe UI, Tahoma;
+	background:rgba(81,95,104,0.8);
+	height:60px;
+	text-align:center;
+	margin-top:15px;
+}
+.quote_author {
+	font-family:Segoe UI;
+	float:right;
+	font-size:25px;
+}
+/* END OF QUOTE PIC STYLE */
+.line {
+	background:#76818a;
+	width:100%;
+	min-width:100%;
+	height:5px;
+}
+/* COLUMNS STYLE */
+#columns {
+	background:#4f585e;
+	width:100%;
+	height:auto;
+}
+.column_container {
+	width:90%;
+	margin:0 auto;
+	padding-bottom:3%;
+	padding-top:3%;
+	overflow:hidden;
+	clear:both;
+}
+.one_column {
+	width:21%;
+	padding-left:3%;
+	float:left;
+	text-align:left;
+}
+.first_column_icon {
+	background:url('/imgs/index/world_icon.png') no-repeat;
+	width:43px;
+	height:50px;
+}
+.second_column_icon {
+	background:url('/imgs/index/briefcase_icon.png') no-repeat;
+	width:46px;
+	height:50px;
+}
+.third_column_icon {
+	background:url('/imgs/index/tie_icon.png') no-repeat;
+	width:26px;
+	height:50px;
+}
+.fourth_column_icon {
+	background:url('/imgs/index/car_icon.png') no-repeat;
+	width:41px;
+	height:50px;
+}
+.column_title {
+	font-size:24px;
+	padding-top:6%;
+}
+.column_text {
+	font-size:14px;
+	padding-top:5%;
+}
+/* END OF COLUMNS STYLE */
+
+/* RAT RACE TEXT STYLE */
+#rat_race {
+	background:#5f869f;
+	width:100%;
+	height:auto;
+}
+.grey_arrow {
+	background:url('/imgs/index/grey_arrow.png') no-repeat;
+	width:22px;
+	height:14px;
+	margin:0 auto;
+}
+.rat_race_text {
+	text-align:center;
+	font-size:24px;
+	padding-bottom:10px;
+}
+.blue_arrow {
+	background:url('/imgs/index/blue_arrow.png') no-repeat;
+	width:22px;
+	height:13px;
+	margin:0 auto;
+}
+.foot_arrow {
+	background:url('/imgs/index/footer_arrow.png') no-repeat;
+	width:23px;
+	height:14px;
+	margin:0 auto;
+}
+#what_rat_race {
+	background:#85a9ba;
+	height:auto;
+	overflow:hidden;
+	clear:both;
+	padding-bottom:20px;
+}
+.ratRaceContainer {
+	width:90%;
+	margin:0 auto;
+	padding-top:20px;
+}
+.ratSymbolFloat {
+	width:30%;
+	float:right;
+}
+.ratRaceSymbol {
+	background:url('/imgs/index/ratRace.png') no-repeat; 
+	width:220px;
+	height:288px;
+	float:left;
+}
+.ratLeftSide {
+	width:60%;
+	float:right;
+}
+.ratTitle {
+	font-size:24px;
+	width:80%;
+	color:#fff;
+	text-align:center;
+}
+.ratBullets ul {
+	list-style-image: url('/imgs/index/bullet.png');
+}
+.ratBullets ul li {
+	font-size:15px;
+	color:#fff;
+	padding-top:25px;
+}
+/* END OF RAT RACE TEXT STYLE */
+
+/* FOOTER */
+#indexFooter {
+	background:#7a7777;
+	width:100%;
+	min-height:auto;
+	overflow:hidden;
+	clear:both;
+	padding-bottom:10px;
+}
+.indexFooterContainer {
+	width:90%;
+	margin:0 auto;
+	color:#fff;
+	padding-top:10px;
+}
+.iFCLeft {
+	width:40%; /*360*/
+	float:left;
+	text-align:justify;
+}
+.iFCText {
+	font-size:25px;
+}
+.iFCRight {
+	width:47%;
+	float:right;
+}
+.iFCRight ul  {
+	list-style-image: url('/imgs/index/footerBullet.png');
+}
+.iFCRight ul  li {
+	display:inline-block;
+}
+.iFCRight ul  li  a {
+	text-decoration:none;
+	color:#fff;
+}
+/* END OF FOOTER */
+
+/*
+---------------------------
+LOG_HEADER VIEW DESIGN
+---------------------------
+*/
+#logHeader {
+	background: url('/imgs/logHeader.png') repeat-x top center;
+	width:100%;
+	height:72px;
+}
+.logHeaderContainer {
+	width:90%;
+	margin:0 auto;
+}
+.logHeaderTitle {
+	color:#e4e4e4;
+	font-size:32px;
+	padding-top:15px;
+	width:15%;
+	float:left;
+}
+.menu {
+	width:60%;
+	float:right;
+}
+.menu ul {
+	padding:0;
+	margin:0;
+	list-style-type:none;
+	float:right;
+	padding-right:10%;
+}
+.menu ul li  {
+	float:left;
+	text-align:center;
+	padding-top:20px;
+	padding-right:10px;
+	padding-left:10px;
+}
+.menu ul li a {
+	color:#fff;
+	height:30px;
+	line-height:30px;
+	text-transform: capitalize;
+	padding-left:10px;
+	text-decoration:none;
+}
+.menuIcon {
+	background: url('/imgs/homeIcon.png') no-repeat;
+	width:31px;
+	height:28px;
+	float:left;
+}
+.menuIcon2 {
+	background: url('/imgs/profileIcon.png') no-repeat;
+	width:31px;
+	height:28px;
+	float:left;
+}
+.menuIcon3 {
+	background: url('/imgs/messagesIcon.png') no-repeat;
+	width:31px;
+	height:28px;
+	float:left;
+}
+.menuIcon4 {
+	background: url('/imgs/exitIcon.png') no-repeat;
+	width:25px;
+	height:24px;
+	float:left;
+}
+/*
+---------------------------
+END OF LOG_HEADER VIEW DESIGN
+---------------------------
+*/
+/*
+---------------------------
+LEFT MENU VIEW DESIGN
+---------------------------
+*/
+#left_menu {
+	background:#cccccc;
+	margin-left:5%;
+	margin-top:30px;
+	width:19%;
+	padding-bottom:10px;
+	color:#595252;
+	font-size:15px;
+	font-family:Tahoma;
+	float:left;
+}
+/* CHAT DESIGN */
+#chat {
+	overflow:hidden;
+	clear:both;
+	text-align:center;
+}
+.top_blue_line {
+	background:#0bacd3;
+	width:100%;
+	height:23px;
+	float:left;
+}
+.chat_arrow {
+	background: url('/imgs/leftmenu/chatArrow.png') no-repeat;
+	width:16px;
+	height:10px;
+	margin-top:5px;
+	float:left;
+}
+.chat_link {
+	text-align:right;
+	float:left;
+	padding-right:10px;
+	color:#fff;
+	width:50%;
+	margin:0 auto;
+}
+#chat_box {
+	margin-top:35px;
+	text-align:left;
+	padding-left:10px;	
+	padding-right:10px;	
+}
+#chat_title {
+	background:#c3bfbf;
+	width:100%;
+	font-size:14px;
+	color:#16434e;
+	text-align:center;
+}
+#chat_container {
+	background:#e7e7e7;
+	width:91%;
+	height:160px;
+	overflow-y: scroll;
+	padding:10px;
+}
+#chat_write {
+	margin-top:10px;
+}
+#chat_mess {
+	float:left;
+	height:25px;
+	width:97%;
+	resize:none;
+	margin-bottom: 10px;
+}
+.chat_button {
+	width:40px;
+	float:right;
+	padding-left:10px;
+}
+.chat_button input {
+	width:35px;
+	height:28px;
+}
+.chat_name, .chat_name a {
+	color:#595252;
+	font-size:12px;
+	font-weight:bold;
+	font-family:tahoma;
+	text-decoration:none;
+}
+.chat_mess_lm {
+	color:#595252;
+	font-size:12px;
+	display: block;
+}
+.chat_date {
+	float:right;
+	color:#fff;
+	padding-right:10px;
+}
+.chat_pic {
+	float:left;
+	padding-right:20px;
+}
+.chat_pic  img {
+	border:0;
+	width:30px;
+	height:30px;
+}
+/* END OF CHAT DESIGN */
+.lm_Home {
+	height:30px;
+	padding-top:15px;
+	padding-left:5px;
+	padding-right:5px;
+}
+.lm_user_icon {
+	background:url('/imgs/leftmenu/user.png') no-repeat;
+	width:20px;
+	height:19px;
+	float:left;
+	padding-left:10px;
+}
+.lm_home_icon {
+	background:url('/imgs/leftmenu/home.png') no-repeat;
+	width:20px;
+	height:19px;
+	float:left;
+	padding-left:10px;
+}
+.lm_green_icon {
+	background:url('/imgs/leftmenu/tick.png') no-repeat;
+	width:17px;
+	height:16px;
+	float:right;
+	padding-left:10px;
+}
+.lm_red_icon {
+	background:url('/imgs/leftmenu/hiks.png') no-repeat;
+	width:17px;
+	height:16px;
+	float:right;
+	padding-left:10px;
+}
+.lm_job {
+	padding-top:5px;
+	padding-bottom:20px;
+	padding-left:5px;
+	padding-right:5px;
+}
+.lm_job_icon {
+	background:url('/imgs/leftmenu/job.png') no-repeat;
+	width:20px;
+	height:19px;
+	float:left;
+	padding-left:10px;
+}
+.lm_line {
+	background:#e4e4e4;
+	height:3px;
+}
+.lm_identical {
+	height:30px;
+	padding-top:7px;
+	padding-left:5px;
+	padding-right:10px;
+}
+.lm_identical a {
+	text-decoration:none;
+	color:#373232;
+}
+.lm_identical a:hover {
+	color:#396f6b;
+}
+.lm_power_icon {
+	background:url('/imgs/leftmenu/power.png') no-repeat;
+	width:22px;
+	height:24px;
+	float:left;
+	padding-left:10px;
+}
+.lm_text_pw {
+	padding-top:5px;
+	float:left;
+}
+.lm_set {
+	float:right;
+	padding-top:5px;
+}
+.lm_energy_icon {
+	background:url('/imgs/leftmenu/energy.png') no-repeat;
+	width:22px;
+	height:27px;
+	float:left;
+	padding-left:10px;
+}
+.lm_fun_icon {
+	background:url('/imgs/leftmenu/cake.png') no-repeat;
+	width:22px;
+	height:21px;
+	float:left;
+	padding-left:10px;
+}
+.lm_set_text {
+	float:right;
+}
+.lm_glasses_icon {
+	background:url('/imgs/leftmenu/glasses.png') no-repeat;
+	width:30px;
+	height:14px;
+	float:left;
+}
+.lm_money_icon {
+	background:url('/imgs/leftmenu/money.png') no-repeat;
+	width:30px;
+	height:14px;
+	float:left;
+}	
+.lm_areas_icon {
+	background:url('/imgs/leftmenu/home.png') no-repeat;
+	width:30px;
+	height:19px;
+	float:left;
+}
+.lm_cars_icon {
+	background:url('/imgs/leftmenu/vehicle.png') no-repeat;
+	width:30px;
+	height:19px;
+	float:left;
+}	
+.lm_jews_icon {
+	background:url('/imgs/leftmenu/jewellery.png') no-repeat;
+	width:30px;
+	height:19px;
+	float:left;
+}	
+.lm_lic_icon {
+	background:url('/imgs/leftmenu/license.png') no-repeat;
+	width:30px;
+	height:19px;
+	float:left;
+}
+.lm_uni_icon {
+	background:url('/imgs/leftmenu/university.png') no-repeat;
+	width:30px;
+	height:19px;
+	float:left;
+}
+.lm_shop_icon {
+	background:url('/imgs/leftmenu/shop.png') no-repeat;
+	width:30px;
+	height:19px;
+	float:left;
+}
+.lm_art_icon {
+	background:url('/imgs/leftmenu/obqvi.png') no-repeat;
+	width:30px;
+	height:19px;
+	float:left;
+}
+/*
+---------------------------
+END OF LEFT MENU VIEW DESIGN
+---------------------------
+*/
+#main_container {
+	background:#ccc;
+	width:70%;
+	float:left;
+	margin-top:30px;
+	margin-right:10px;
+	margin-left:10px;
+	padding:10px;
+}
+/* 
+---------------------------
+MAIN VIEW DESIGN
+---------------------------
+ */
+#main_container_view {
+	background:#cccccc;
+	height:auto;
+	width:65%;
+	max-width:850px;
+	float:left;
+	margin-top:30px;
+	margin-right:10px;
+	margin-left:10px;
+	margin-bottom:20px;
+}
+.city_zone_container_link {
+	background: url('/imgs/leftmenu/top_blue_line.png') repeat-x;
+	width:100%;
+	height:23px;
+	text-align:center;
+}
+.city_zone_container_link a {
+	text-decoration:none;
+	color:#fff;
+	font-size:14px;
+}
+#city_zone {
+	padding-top:15px;
+	padding-right:10px;
+	overflow:hidden;
+	clear:both;
+}
+.area {
+	background: url('/imgs/buildings/background.png') no-repeat;
+	width:223px;
+	height:270px;
+	float:left;
+	margin-left:30px;
+	padding-top:20px;
+}
+.area_for_sale_title {
+	color:#4a4c4f;
+	text-align:center;
+	font-size:14px;
+}
+.area_for_sale {
+	background: url('/imgs/buildings/for_sale.png') no-repeat;
+	width:171px;
+	height:103px;
+	margin-top:30px;
+	margin-left:20px;
+}
+.area_button input {
+	background:none;
+	border:0;
+	width:183px;
+	height:40px;
+	color:#fff;
+}
+.area_button {
+	background:url('/imgs/buildings/button.png') no-repeat;
+	width:183px;
+	height:40px;
+	margin-top:5px;
+	margin-left:20px;
+}
+.area_button a {
+	text-decoration:none;
+	text-align:center;
+	width:183px;
+	padding-top:10px;
+	color:#fff;
+	float:left;
+	font-size:14px;
+}
+.area_bought_button input {
+	background:none;
+	border:0;
+	width:183px;
+	height:40px;
+	color:#fff;
+}
+.area_bought_button {
+	background:url('/imgs/buildings/button_bought.png') no-repeat;
+	width:183px;
+	height:40px;
+	margin-top:5px;
+	margin-left:20px;
+}
+.area_space {
+	font-size:12px;
+	color:#818080;
+	text-align:center;
+	padding-top:5px;
+}
+.area_sold {
+	background: url('/imgs/buildings/sold_area.png') no-repeat;
+	width:171px;
+	height:103px;
+	margin-top:30px;
+	margin-left:20px;
+}
+/*
+============================================================
+PIXEL ART BUILDINGS
+============================================================
+*/
+.apartments_level_two {
+	background: url('/imgs/buildings/blok.png') no-repeat;
+	width:180px;
+	height:160px;
+	margin-top:10px;
+	margin-left:30px;
+}
+.apartments_level_one {
+	background: url('/imgs/buildings/smallBlok.png') no-repeat;
+	width:180px;
+	height:160px;
+	margin-top:10px;
+	margin-left:30px;
+}
+.bank_pixel_art {
+	background: url('/imgs/buildings/bank.png') no-repeat;
+	width:180px;
+	height:160px;
+	margin-top:10px;
+	margin-left:30px;
+}
+.casino_pixel_art {
+	background: url('/imgs/buildings/casino.png') no-repeat;
+	width:180px;
+	height:160px;
+	margin-top:10px;
+	margin-left:10px;
+}
+.shop_pixel_art {
+	background: url('/imgs/buildings/shop.png') no-repeat;
+	width:180px;
+	height:160px;
+	margin-top:10px;
+	margin-left:10px;
+}
+.disco_pixel_art {
+	background: url('/imgs/buildings/disco.png') no-repeat;
+	width:180px;
+	height:160px;
+	margin-top:10px;
+	margin-left:30px;
+}
+.university_pixel_art {
+	background: url('/imgs/buildings/university.png') no-repeat;
+	width:180px;
+	height:160px;
+	margin-top:10px;
+	margin-left:20px;
+}
+.house_pixel_art {
+	background: url('/imgs/buildings/smallHouse.png') no-repeat;
+	width:180px;
+	height:160px;
+	margin-top:10px;
+	margin-left:20px;
+}
+.restaurant_level_one {
+	background: url('/imgs/buildings/smallRestaurant.png') no-repeat;
+	width:180px;
+	height:160px;
+	margin-top:10px;
+	margin-left:30px;
+}
+.restaurant_level_two {
+	background: url('/imgs/buildings/restaurant.png') no-repeat;
+	width:180px;
+	height:160px;
+	margin-top:10px;
+	margin-left:20px;
+}
+.apartment_for_sale {
+	background: url('/imgs/buildings/apartment_for_sale.png') no-repeat;
+	width:171px;
+	height:160px;
+	margin-left:20px;
+}
+.apartment_sold_pa {
+	background: url('/imgs/buildings/apartment.png') no-repeat;
+	width:171px;
+	height:160px;
+	margin-left:20px;
+}
+.cow_building_symbol_left {
+	background: url('/imgs/stopanstvo/cowSymbol.png') no-repeat;
+	width:36px;
+	height:37px;
+	float:left;
+	margin-top:90px;
+	margin-left:30px;
+}
+.small_building_art {
+	background: url('/imgs/stopanstvo/smallBuild.png') no-repeat;
+	width:160px;
+	height:128px;
+	margin-left:30px;
+	margin-top:30px;
+}
+.tomatos_pixel_art {
+	background: url('/imgs/stopanstvo/tomatos.png') no-repeat;
+	width:174px;
+	height:108px;
+	margin-left:30px;
+	margin-top:50px;
+}
+/* BUY AREA DIV */
+#buy_area_div_overlay {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.6);
+	z-index: 100;
+	color:#fff;
+	visibility:hidden;
+}
+#buy_morearea_div_overlay {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.6);
+	z-index: 100;
+	color:#fff;
+	visibility:hidden;
+}
+.buy_area_div_container {
+	background:#dfdfdf;
+	width:35%;
+	min-height:150px;
+	position:fixed;
+	top: 40%;
+	left: 50%;
+	margin-top: -100px;
+	margin-left: -220px;
+}
+.text_buyarea_title {
+	font-size:16px;
+	color:#4a4c4f;
+	text-align:center;
+	padding-top:10px;
+}
+.text_buyarea_left {
+	font-size:16px;
+	color:#4a4c4f;
+	text-align:left;
+	padding-top:10px;
+	padding-left:25px;
+	padding-right:25px;
+}
+#area_buy_space_wanted {
+	width:60px;
+}
+.area_calculate {
+	width:90px;
+	float:right;
+}
+.area_calculate input {
+	background:none;
+	border:0;
+	width:90px;
+	height:25px;
+	color:#fff;
+}
+.area_calculate {
+	background:#9b9b9b;
+	width:90px;
+	height:25px;
+}
+#text_buyarea_calculated {
+	font-size:16px;
+	color:#2f5f95;
+	text-align:left;
+	padding-top:10px;
+	padding-left:25px;
+	padding-right:25px;
+}
+.area_buy_button input {
+	background:none;
+	border:0;
+	width:100%;
+	height:25px;
+	color:#fff;
+	font-weight:bold
+}
+.area_buy_button {
+	background:#57b464;
+	width:100%;
+	height:25px;
+	margin-top:10px;
+}
+/* END OF BUY AREA DIV */
+
+/***************
+CHOOSE WHAT TO BUILD DESIGN
+***************/
+.ajax_header_container {
+	width:92%;
+	margin:0 auto;
+	padding-bottom:30px;
+}
+.ajax_back_icon {
+	background:url('/imgs/buildings_icons/back_icon.png') no-repeat;
+	width:19px;
+	height:19px;
+	float:left;
+	padding-left:15px;
+	text-decoration:none;
+}
+.back_icon_title {
+	width:60px;
+	float:left;
+}
+.back_icon_title  a {
+	color:#414141;
+	text-decoration:none;
+}
+.back_icon_title  a:hover{
+	color:#206299;
+}
+.choose_build_title {
+	color:#414141;
+	text-align:center;
+	font-size:18px;
+	font-size:18px;
+	padding-right:50px;
+}
+/* BUILDING APARTMENT */
+.build_apartments {
+	overflow:hidden;
+	clear:both;
+	padding-bottom:15px;
+}
+.bm_left_side {
+	width:40%;
+	float:left;
+}
+.bm_left_side .area {
+	float:none;
+}
+.expenses_profits_left {
+	width:220px;
+	padding-left:30px;
+	overflow:hidden;
+	clear:both;
+	padding-top:5px;
+}
+.expenses_icon {
+	background:url('/imgs/buildings_icons/expenses_down_icon.png') no-repeat;
+	width:12px;
+	height:14px;
+	float:left;
+	padding-left:8px;
+	margin-top:3px;
+}
+.expenses_text {
+	width:80px;
+	color:#9e171a;
+	float:left;
+}
+.expenses_bash {
+	color:#414141;
+	float:right;
+}
+.profits_icon {
+	background:url('/imgs/buildings_icons/profits_up_icon.png') no-repeat;
+	width:13px;
+	height:14px;
+	float:left;
+	padding-left:8px;
+	margin-top:3px;
+}
+.profits_text {
+	color:#0c8f0c;
+	float:left;
+}
+.prof_exp_line_split {
+	background:#837979 repeat-x;
+	margin-left:30px;
+	margin-top:5px;
+	width:220px;
+	height:1px;
+}
+.pechalba_icon {
+	background:url('/imgs/buildings_icons/chista_pechalba_icon.png') no-repeat;
+	width:15px;
+	height:15px;
+	float:left;
+	padding-left:8px;
+	margin-top:3px;
+}
+.pechalba_text {
+	width:80px;
+	color:#414141;
+	float:left;
+}
+.bm_right_side {
+	width:60%;
+	float:left;
+	color:#414141;
+}
+.building_crate_title {
+	font-size:18px;
+}
+.building_crate_text_level {
+	padding-top:10px;
+}
+.build_create_container {
+	padding-top:15px;
+	padding-bottom:5px;
+}
+.building_area_icon  {
+	background:url('/imgs/buildings_icons/area_space_icon.png') no-repeat;
+	width:17px;
+	height:15px;
+	float:left;
+	padding-left:8px;
+}
+.building_crate_smalltext {
+	padding-left:25px;
+	color:#345e67;
+	font-size:14px;
+}
+.building_crate_buy_button input {
+	background:none;
+	border:0;
+	width:79px;
+	height:19px;
+	color:#fff;
+	font-size:15px;
+}
+.building_crate_buy_button {
+	background:url('/imgs/buildings_icons/small_buy_button.png') no-repeat;
+	width:79px;
+	height:20px;
+	margin-top:10px;
+	margin-left:25px;
+}
+.building_area_allowbuild_icon {
+	background:url('/imgs/buildings_icons/building_allowed_icon.png') no-repeat;
+	width:15px;
+	height:17px;
+	float:left;
+	padding-left:8px;
+}
+.building_area_build_icon {
+	background:url('/imgs/buildings_icons/truck_icon.png') no-repeat;
+	width:19px;
+	height:18px;
+	float:left;
+	padding-left:8px;
+}
+.building_area_apartments_icon {
+	background:url('/imgs/buildings_icons/key_icon.png') no-repeat;
+	width:19px;
+	height:8px;
+	float:left;
+	padding-left:8px;
+	margin-top:8px;
+}
+.building_area_clock_icon {
+	background:url('/imgs/buildings_icons/clock_icon.png') no-repeat;
+	width:16px;
+	height:16px;
+	float:left;
+	padding-left:8px;
+}
+.apartment {
+	padding-top:15px;
+	color:#414141;
+}
+.apartment_text_title {
+	font-size:17px;
+}
+.apartment_text_padding a {
+	text-decoration:none;
+	color:#20808C;
+	font-weight:bold;
+}
+.apartment_sold {
+	padding-left:26px;
+	padding-top:5px;
+}
+.std_money_icon {
+	background:url('/imgs/leftmenu/money.png') no-repeat;
+	width:30px;
+	height:14px;
+	float:right;
+	margin-top:3px;
+}
+.building_area_price_tag {
+	background:url('/imgs/buildings_icons/price_tag_icon.png') no-repeat;
+	width:20px;
+	height:20px;
+	float:left;
+	padding-left:8px;
+}
+.buy_apartment_button input {
+	background:none;
+	border:0;
+	width:126px;
+	height:26px;
+	color:#fff;
+	font-size:14px;
+}
+.buy_apartment_button {
+	/*background:url('/imgs/buildings_icons/buy_apartment_button.png') no-repeat;*/
+	background:url('/imgs/buildings_icons/buy_apartment_button_two.png') no-repeat;
+	width:126px;
+	height:26px;
+	margin-top:5px;
+}
+.define_price_button input {
+	background:none;
+	border:0;
+	width:125px;
+	height:26px;
+	color:#fff;
+	font-size:13px;
+}
+.define_price_button {
+	/*background:url('/imgs/buildings_icons/buy_apartment_button.png') no-repeat;*/
+	background:url('/imgs/buildings_icons/define_price_button.png') no-repeat;
+	width:125px;
+	height:26px;
+	margin-top:5px;
+}
+#apartmen_define_price {
+	width:70px;
+}
+#apartment_notification {
+	color:#9e171a;
+	font-weight:bold;
+	padding-bottom:15px;
+	text-align:center;
+}
+.cow_building_icon {
+	background:url('/imgs/buildings_icons/cow_building_icon.png') no-repeat;
+	width:19px;
+	height:18px;
+	float:left;
+	padding-left:8px;
+}
+#df_space_build {
+	width:75px;
+}
+#df_space_calc_design {
+	background:#9b9b9b;
+	border:0;
+	width:90px;
+	height:20px;
+	color:#fff;
+}
+/***************
+END OF CHOOSE WHAT TO BUILD DESIGN
+***************/
+/*
+-----------------------------------------
+		# DAIRY FARM DESIGN #
+-----------------------------------------
+*/
+#dairy_farm_main_info {
+	padding-left:30px;
+	overflow:hidden;
+	clear:both;
+	padding-bottom:15px;
+	color:#414141;
+}
+.top_cows {
+	overflow:hidden;
+	clear:both;
+	padding-top:5px;
+}
+.cow_num_title {
+	padding-top: 5px;
+}
+.buy_cow_texta {
+	padding-left: 50px;
+}
+.buy_cow_text {
+	padding-top: 15px;
+	width:100px;
+	float:left;
+	padding-left: 22px;
+}
+.buy_cow_div_input {
+	width:130px;
+	margin:0 auto;
+	padding-top:20px;
+}
+.buy_cow_button {
+	margin-top:10px;
+}
+.buy_cow_button input {
+	background:none;
+	border:none;
+	width:125px;
+	height:30px;
+	color:#867D7D;
+	text-align:center;
+}
+.buy_cow_button {
+	background:#ffffff;
+	width:125px;
+	height:30px;
+	margin-top:25px;
+	margin:0 auto;
+	border-radius:7px;
+	-moz-border-radius:7px;
+	-webkit-border-radius:7px;
+	border:2px solid #b5b2b2;
+}
+.arew_cow_container {
+	padding-left:16px;
+	padding-top:10px;
+}
+.cow_pixel_art {
+	background:url('/imgs/stopanstvo/cow_pixel_art.png') no-repeat;
+	width:180px;
+	height:160px;
+	margin-left:25px;
+	margin-top:10px;
+}
+.buy_cow_pricetag {
+	background:url('/imgs/buildings_icons/buy_cow_pricetag.png') no-repeat;
+	width:20px;
+	height:20px;
+	padding-left:10px;
+	float:left;
+}
+.cow_clock {
+	background:url('/imgs/buildings_icons/cow_clock.png') no-repeat;
+	width:20px;
+	height:20px;
+	padding-left:10px;
+	float:left;
+}
+.cow_milk {
+	background:url('/imgs/buildings_icons/cow_milk.png') no-repeat;
+	width:20px;
+	height:20px;
+	padding-left:10px;
+	float:left;
+}
+.cow_text_left {
+	float:left;
+	font-size:15px;
+}
+.cow_text_milk {
+	overflow:hidden;
+	clear:both;
+	padding-top:20px;
+}
+.milking_cow_pixel {
+	background:url('/imgs/stopanstvo/milking_cow.png') no-repeat;
+	width:180px;
+	height:160px;
+	margin-top:25px;
+}
+.milk_storage_pixel {
+	background:url('/imgs/stopanstvo/milk_storage.png') no-repeat;
+	width:180px;
+	height:160px;
+	margin-left:20px;
+	margin-top:10px;
+}
+.milk_basket_pixel {
+	background:url('/imgs/stopanstvo/milk_basket.png') no-repeat;
+	width:180px;
+	height:160px;
+	margin-left:20px;
+	margin-top:10px;
+}
+.big_cow_clock {
+	background:url('/imgs/stopanstvo/cow_big_clock.png') no-repeat;
+	width:180px;
+	height:160px;
+	margin-left:20px;
+}
+.tomatos_storage_pixel {
+	background:url('/imgs/stopanstvo/tomatos_storage.png') no-repeat;
+	width:180px;
+	height:160px;
+	margin-left:20px;
+}
+.tomatos_finish_pixel {
+	background:url('/imgs/stopanstvo/tomato_finish.png') no-repeat;
+	width:180px;
+	height:160px;
+	margin-left:5px;
+	margin-top:40px;
+}
+.mature_tomatos_pixel {
+	background:url('/imgs/stopanstvo/mature_tomatos.png') no-repeat;
+	width:180px;
+	height:160px;
+	margin-left:20px;
+}
+.tomato_seeds_pixel {
+	background:url('/imgs/stopanstvo/tomato_seeds.png') no-repeat;
+	width:180px;
+	height:160px;
+	margin-left:20px;
+}
+/*
+-----------------------------------------
+		# END OF DAIRY FARM DESIGN #
+-----------------------------------------
+*/
+/*
+-----------------------------------------
+			# BANK'S DESIGN #
+-----------------------------------------
+*/
+.credit_card_icon {
+	background:url('/imgs/buildings_icons/credit_card_icon.png') no-repeat;
+	width:20px;
+	height:16px;
+	float:left;
+	padding-left:8px;
+	margin-top:4px;
+}
+.credit_title {
+	font-size:18px;
+	color:#43676f;
+}
+.up_to_fk {
+	color:#43676f;
+	padding-top:20px;
+	padding-left:28px;
+}
+.credit_text_input input {
+	border:0;
+	background:none;
+	width:129px;
+	height:27px;
+	text-align:center;
+	color:#6fa6b4;
+	font-size:16px;
+}
+.credit_text_input {
+	background:url('/imgs/buildings_icons/credit_text_input.png') no-repeat;
+	width:129px;
+	height:29px;
+	margin-top:10px;
+}
+.credit_rules {
+	padding-top:15px;
+	padding-bottom:15px;
+}
+.credit_rules span {
+	font-size:14px;
+}
+.credit_button input {
+	border:0;
+	background:none;
+	width:129px;
+	height:27px;
+	text-align:center;
+	color:#fff;
+	font-size:16px;
+}
+.credit_button {
+	background:url('/imgs/buildings_icons/credit_button.png') no-repeat;
+	width:129px;
+	height:29px;
+	margin-top:10px;
+}
+#credit_notification {
+	padding-top:5px;
+	color:#6F0303;
+}
+.build_bank {
+	padding-left:25px;
+	color:#414141;
+}
+/*
+-----------------------------------------
+		| END OF BANK'S DESIGN |
+-----------------------------------------
+*/
+/*
+-----------------------------------------
+		| RESTAURANT DESIGN |
+-----------------------------------------
+*/
+.dishes {
+	color:#414141;
+	padding-left:30px;
+	padding-bottom:30px;
+}
+.top_dish {
+	width:40%;
+	float:left;
+}
+.top_dishes {
+	overflow:hidden;
+	clear:both;
+}
+.top_energy{
+	width:20%;
+	float:left;
+}
+.dish_icon {
+	background:url('/../imgs/buildings_icons/dish_icon.png') no-repeat;
+	width:15px;
+	height:16px;
+	float:left;
+	padding-lefT:10px;
+}
+.dish_energy_icon {
+	background:url('/../imgs/buildings_icons/restaurant_energy.png') no-repeat;
+	width:15px;
+	height:18px;
+	float:left;
+	padding-lefT:5px;
+}
+.dish_quantity_icon {	
+	background:url('/../imgs/buildings_icons/fridge.png') no-repeat;
+	width:15px;
+	height:18px;
+	float:left;
+	padding-lefT:5px;
+}
+.dish_price_icon {
+	background:url('/../imgs/buildings_icons/restaurant_price_tag.png') no-repeat;
+	width:19px;
+	height:19px;
+	float:left;
+	padding-lefT:5px;
+}
+.bottom_dishes {
+	overflow:hidden;
+	clear:both;
+	padding-left:20px;
+}
+.dish {
+	width:40%;
+	padding-top:15px;
+}
+.dish_energy {
+	width:20%;
+	text-align:center;
+}
+.dish_quantity {
+	width:31%;
+	text-align:center;
+}
+.dish_price {
+	width:45px;
+	border:1px solid #707070;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 8px;
+	text-align:center;
+}
+#show_bought_dish {
+	font-weight:bold;
+	padding-bottom:20px;
+}
+.area_for_sale_title a {
+	text-decoration:none;
+	color:#1095C5;
+	font-weight:bold;
+}
+/*
+-----------------------------------------
+		| END OF RESTAURANT DESIGN |
+-----------------------------------------
+*/
+/*--- CASINO DESIGN ---*/
+.licesense_link {
+	text-decoration:none;
+	color:#3377C3;
+}
+.license_container {
+	padding-left:30px;
+	color:#414141;
+	padding-top:15px;
+	padding-bottom:60px;
+}
+.casino_license {
+	overflow:hidden;
+	clear:both;
+	padding-top:25px;
+}
+.casino_card_icon {
+	background:url('/imgs/licenses/casino_cards_icon.png') no-repeat;
+	width:24px;
+	height:24px;
+	float:left;
+	padding-left:20px;
+}
+.casino_gold_icon {
+	background:url('/imgs/licenses/gold_bar_icon.png') no-repeat;
+	width:24px;
+	height:24px;
+	float:left;
+	padding-left:20px;
+}
+.casino_oil_icon {
+	background:url('/imgs/licenses/oil_icon.png') no-repeat;
+	width:24px;
+	height:24px;
+	float:left;
+	padding-left:20px;
+}
+.casino_license_text {
+	width:35%;
+	float:left;
+}
+.casino_buy_button {
+	float:left;
+}
+.casino_money_icon {
+	background:url('/imgs/leftmenu/money.png') no-repeat;
+	width:30px;
+	height:14px;
+	float:left;
+}
+.casino_left_text {
+	width:80px;
+	color:#414141;
+	float:left;
+	font-size:14px;
+}
+.get_cm_text {
+	width:220px;
+	padding-left:30px;
+	padding-top:20px;
+	color:#414141;
+	font-size:14px;
+	font-weight:bold;
+}
+.casino_left_input {
+	width:170px;
+	float:left;
+}
+.bottom_arrow_button input, .top_arrow_button  input {
+	background:none;
+	border:0;
+	width:31px;
+	height:30px;
+}
+.casino_arrow_button {
+	width:40px;
+	float:left;
+}
+.bottom_arrow_button{
+	background:url('/imgs/buildings_icons/bottom_arrow_button.png') no-repeat;
+	width:31px;
+	height:30px;
+	margin-top:10px;
+}
+.top_arrow_button {
+	background:url('/imgs/buildings_icons/top_arrow_button.png') no-repeat;
+	width:31px;
+	height:30px;
+	margin-top:10px;
+}
+/* ENTERED CASINO */
+#show {
+	width:800px;
+	margin:0 auto;
+	overflow:hidden;
+	clear:both;
+	padding-left:30px;
+}
+.randNum, #randNum, #randNum2, #randNum3  {
+	background:#fff;
+	border:2px solid #000;
+	width:250px;
+	height:250px;
+	float:left;
+	font-size:180px;
+	font-weight:bold;
+	font-family:tahoma;
+	color:#000;
+	padding-top:25px;
+}
+.prizes {
+	padding-left:30px;
+	color:#414141;
+	padding-top:30px;
+}
+#showInfo {
+	color:#414141;
+}
+.casino_prizes_subtitle {
+	padding-bottom:15px;
+}
+.casino_left_prizes {
+	width:60%;
+	float:left;
+}
+#makeZalog {
+	width:250px;
+	margin:0 auto;
+	text-align:center;
+}
+.casino_prizes_title {
+	color:#414141;
+	text-align:center;
+	padding-bottom:10px;
+}
+#casino_button {
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-right:50px;
+}
+/*--- END OF CASINO DESIGN ---*/
+/*---- UNIVERSITY DESIGN -----*/
+.build_university {
+	padding-left:25px;
+	padding-bottom:25px;
+	color:#414141;
+}
+.uni_administrations {
+	padding-left:25px;
+	padding-bottom:25px;
+	color:#414141;
+}
+.all_uni_cats {
+	padding-top:15px;
+	padding-bottom:25px;
+}
+.add_uni_question {
+	padding-top:15px;
+}
+.tractor_icon {
+	background:url('/imgs/university/tractor_icon.png') no-repeat;
+	width:29px;
+	height:27px;
+	float:left;
+	padding-left:20px;
+}
+.cow_icon {
+	background:url('/imgs/university/cow_icon.png') no-repeat;
+	width:29px;
+	height:27px;
+	float:left;
+	padding-left:20px;
+}
+.shapka_icon {
+	background:url('/imgs/university/shapka.png') no-repeat;
+	width:29px;
+	height:27px;
+	float:left;
+	padding-left:20px;
+}
+.briefcase_job_icon {
+	background:url('/imgs/university/briefcase_job_icon.png') no-repeat;
+	width:29px;
+	height:27px;
+	float:left;
+	padding-left:20px;
+}
+.uni_specialty {
+	overflow:hidden;
+	clear:both;
+	padding-top:25px;
+	color:#557880;
+}
+.start_uni_specialty_button input, .test_uni_specialty_button input {
+	width:125px;
+	height:26px;
+	border:0;
+	background:none;
+	color:#fff;
+	font-size:16px;
+}
+.start_uni_specialty_button {
+	background:url('/imgs/university/enter_button.png') no-repeat;
+	width:125px;
+	height:26px;
+	margin-left:0px;
+}
+.test_uni_specialty_button {
+	background:url('/imgs/university/unversity_test_button.png') no-repeat;
+	width:125px;
+	height:26px;
+	margin-left:0px;
+}
+.test_uni_specialty_button a {
+	text-decoration:none;
+	color:#fff;
+	width:125px;
+	padding-top:3px;
+	text-align:center;
+	float:left;
+}
+.uni_specialty_top {
+	width:25%;
+	margin:0 auto;
+}
+.specialties_icon {
+	background:url('/imgs/university/education_type_icon.png') no-repeat;
+	width:27px;
+	height:25px;
+	float:left;
+	padding-left:15px;
+}
+.specialties_title {
+	color:#557880;
+}
+/*--- QUESTIONS DESIGN ---*/
+#load_uni_test {
+	width:50%;
+	margin:0 auto;
+	padding-top:15px;
+	padding-bottom:50px;
+}
+#timer {
+	width:90px;
+	margin: 0 auto;
+	padding-top:20px;
+	overflow:hidden;
+	clear:both;
+}
+.timer_icon {
+	background:url('/imgs/university/timer_icon.png') no-repeat;
+	width:32px;
+	height:31px;
+	float:left;
+	padding-right:10px;
+}
+.timer {
+	color:#587a82;
+	font-size:18px;
+	padding-top:6px;
+}
+.timerWhiteSpace {
+	height:50px;
+}
+.question {
+	color:#587a82;
+	font-size:25px;
+	text-align:center;
+}
+.answers {
+	padding-top:15px;
+}
+.answer {
+	overflow:hidden;
+	clear:both;
+}
+.answers input {
+	border:0;
+}
+.answer_button {
+	background:url('/imgs/university/answer.png') no-repeat;
+	width:54px;
+	height:53px;
+	float:left;
+	font-size:30px;
+	color:#fff;
+	font-weight:bold;
+}
+.full_answer {
+	font-size:18px;
+	color:#587a82;
+	margin-top: 15px;
+	padding-left: 70px;
+}
+.level_question {
+	font-size:12px;
+	font-style:italic;
+	color:#587a82;
+	float:right;
+	padding-top:15px;
+}
+#is_correct {
+	width:50%;
+	height:35px;
+	margin:0 auto;
+	margin-top:10px;
+}
+.small_green_tick {
+	background:url('/imgs/university/green_tick.png') no-repeat;
+	width:22px;
+	height:22px;
+	float:left;
+	padding-lefT:10px;
+}
+.true_ans {
+	background:rgba(81,185,44,0.5);
+	border-radius:10px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	color:#FFF;
+	height:25px;
+	padding-top:5px;
+	text-align:center;
+}
+.red_tick {
+	background:rgba(97,6, 13,0.5);
+	border-radius:10px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	color:#fff;
+	height:25px;
+	padding-top:5px;
+	text-align:center;
+}
+/* IS TEST PASSED */
+.is_test_passed {
+	width:60%;
+	margin:0 auto;
+	padding-top:15px;
+	padding-bottom:150px;
+}
+.test_passed_text {
+	font-size:32px;
+	color:#636769;
+	text-align:center;
+	padding-top:50px;
+}
+.big_green_tick {
+	background:url('/imgs/university/big_green_tick.png') no-repeat;
+	width:186px;
+	height:173px;
+	float:left;
+	padding-left:40px;
+}
+.big_red_tick {
+	background:url('/imgs/university/big_red_tick.png') no-repeat;
+	width:186px;
+	height:182px;
+	float:left;
+	padding-left:10px;
+}
+.test_passed_result {
+	color:#636769;
+}
+/*---- END OF UNIVERSITY DESIGN -----*/
+/*---- SHOP DESIGN ----*/
+.top_shop {
+	width:98%;
+	margin:0 auto;
+	overflow:hidden;
+	clear:both;
+	padding-top:10px;
+}
+.top_shop_left {
+	width:50%;
+	float:left;
+}
+.shop_cat_icon {
+	background: url('/imgs/shop/shop_cat_icon.png') no-repeat;
+	width:31px;
+	height:25px;
+	float:left;
+	padding-left:10px;
+}
+.shop_cat_title {
+	color:#595252;
+	padding-top:3px;
+}
+.top_shop_right {
+	width:50%;
+	float:right;
+}
+.main_shop_button {
+	background: url('/imgs/shop/shop_main_button.png') no-repeat;
+	width:164px;
+	height:29px;
+	float:right;
+	text-align:center;
+	text-decoration:none;
+	color:#d0d0d0;
+	padding-left:10px;
+	padding-top:5px;
+}
+.middle_top_shop {
+	background:#bfbebe repeat-x;
+	width:97.2%;
+	height:30px;
+	border:1px solid #aeadad;
+	padding-left:10px;
+	padding-right:10px;
+}
+.shop_div_icon {
+	width:4%;/* 30px */
+	height:28px;
+	float:left;
+	padding-left:10px;
+}
+.shop_product_title {
+	width:35%;/* 216px */
+	line-height:28px;
+	color:#178ca8;
+	float:left;
+}
+.shop_user_title {
+	width:18%;/* 159px */
+	line-height:28px;
+	color:#178ca8;
+	float:left;
+}
+.shop_quantity_title {
+	width:11%;/* 88px */
+	line-height:28px;
+	color:#178ca8;
+	float:left;
+}
+.shop_prize_title{
+	width:12%; /*76px*/
+	line-height:28px;
+	color:#178ca8;
+	float:left;
+}
+.shop_one_product {
+	background:#d0d0d0;
+	width:97.2%;
+	min-height:30px;
+	border:1px solid #bfbfbf;
+	padding-left:10px;
+	padding-right:10px;
+	margin-top:5px;
+	margin-bottom:5px;
+	overflow:hidden;
+	clear:both;
+}
+.jet_div_icon {
+	background: url('/imgs/shop/jet_icon.png') no-repeat;
+	width:31px;
+	height:25px;
+	float:left;
+	padding-left:10px;
+}
+.shop_one_product .shop_product_title {
+	width:35%;/* 159px */
+	line-height:28px;
+	color:#777272;
+	float:left;
+}
+.shop_one_product .shop_user_title {
+	width:18%;/* 159px */
+	line-height:28px;
+	float:left;
+}
+.shop_one_product .shop_user_title a {
+	text-decoration:none;
+	color:#777272;
+}
+.shop_one_product .shop_user_title a:hover {
+	color:#5e98a6;
+}
+.shop_one_product .shop_quantity_title {
+	width:11%;/* 88px */
+	line-height:28px;
+	color:#777272;
+	float:left;
+}
+.shop_prize_title .dish_price {
+	width:65px;
+	border:1px solid #707070;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 8px;
+	text-align:center;
+}
+.shop_q_field {
+	line-height:30px;
+	width:7%;
+	float:left;
+}
+.shop_buy_button_cont {
+	padding-top:5px;
+}
+.shop_buy_button input {
+	background:none;
+	border:0;
+	width:77px;
+	height:18px;
+	color:#fff;
+	font-size:16px;
+}
+.shop_buy_button {
+	background: url('/imgs/shop/pusni_button.png') no-repeat;
+	width:77px;
+	height:18px;
+	float:left;
+}
+/*---- END OF SHOP DESIGN ----*/
+/*---- SELL DESIGN ----*/
+.shop_sell_cat_title {
+	width:50%;
+	color:#595252;
+	padding-top:3px;
+	float:left;
+}
+.shop_category_menu {
+	width:25%;
+	float:left;'
+	padding:0;
+	margin:0;
+}
+.shop_category_menu ul {
+	padding:0;
+	margin:0;
+	line-height:25px;
+}
+.shop_category_menu li {
+	padding:0;
+	margin:0;
+	list-style-type:none;
+	position:relative;
+}
+.shop_category_menu ul li a {
+	background:#bababb;
+	text-align:center;
+	text-decoration:none;
+	color:#7f7f7f;
+	border:1px solid #a8a9ad;
+	height:25px;
+	width:250px;
+	display:block;
+}
+.shop_category_menu ul ul {
+	display:none;
+}
+.shop_category_menu ul li:hover ul {
+	display:block;
+}
+.shop_category_menu ul ul li a {
+	background:#bababb;
+	text-align:center;
+	color:#fff;
+	border:1px solid #a8a9ad;
+	height:25px;
+	width:250px;
+}
+#all_sell_main_cats {
+	padding-top:10px;
+	padding-bottom:10px;
+}
+#all_sell_main_cats  .middle_top_shop {
+
+}
+#all_sell_main_cats  .middle_top_shop  .shop_prize_title {
+	width:21%;
+}
+#all_sell_main_cats .shop_q_field {
+	width:15%;
+	padding-left:10px;
+	padding-right:10px;
+}
+#all_sell_main_cats .dish_price {
+	width:100%;
+	
+}
+.sell_no_products {
+	background:#bfbebe repeat-x;
+	width:97.2%;
+	height:30px;
+	border:1px solid #aeadad;
+	padding-left:10px;
+	padding-right:10px;
+	text-align:center;
+	color:#BA0C0C;
+	font-weight:bold;
+	margin-top:10px;
+	line-height:30px;
+}
+.sell_not {
+	background:#bfbebe repeat-x;
+	width:97.2%;
+	min-height:28px;
+	border:1px solid #aeadad;
+	padding-left:10px;
+	padding-right:10px;
+	text-align:center;
+	color:#595252;
+	font-weight:bold;
+	margin-top:10px;
+	line-height:30px;
+}
+.sell_red {
+	color:#B22626;
+}
+.sell_green {
+	color:#3D8E1C;
+}
+#no_articles_in_shop {
+	line-height:28px;
+	color:#901414;
+	text-align:center;
+}
+#shop_pagination {
+	padding-top:15px;
+	padding-bottom:15px;
+	text-align:center;
+}
+#shop_pagination a {
+	text-decoration:none;
+	background:#ffffff;
+	border:2px solid #b5b2b2; /* d7d7d7 */
+	padding:4px 7px;
+	color:#787878;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+}
+#shop_pagination  strong {
+	text-decoration: none;
+	background: #0bacd3;
+	border: 2px solid #b5b2b2; /* d7d7d7 */
+	padding: 4px 7px;
+	color: #fff;
+	font-weight: normal;
+	border-radius: 5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	
+}
+#build_mansions_not_div {
+	width:97.5%;
+	margin:0 auto;
+	padding-bottom:25px;;
+}
+/* SHOP ICONS */
+.car_div_icon {
+	background: url('/imgs/shop/car_icon.png') no-repeat;
+	width:31px;
+	height:25px;
+	float:left;
+	padding-left:10px;
+} 
+.cow_milk_div_icon {
+	background: url('/imgs/shop/milk_icon.png') no-repeat;
+	width:31px;
+	height:25px;
+	float:left;
+	padding-left:10px;
+}
+.pig_meat_div_icon {
+	background: url('/imgs/shop/pig_icon.png') no-repeat;
+	width:31px;
+	height:25px;
+	float:left;
+	padding-left:10px;
+}
+.chicken_div_icon {
+	background: url('/imgs/shop/chicken_icon.png') no-repeat;
+	width:31px;
+	height:25px;
+	float:left;
+	padding-left:10px;
+}
+.cow_meat_div_icon {
+	background: url('/imgs/shop/cow_icon.png') no-repeat;
+	width:31px;
+	height:25px;
+	float:left;
+	padding-left:10px;
+}
+.tomato_div_icon {
+	background: url('/imgs/shop/tomato_icon.png') no-repeat;
+	width:31px;
+	height:25px;
+	float:left;
+	padding-left:10px;
+}
+.cucumber_div_icon {
+	background: url('/imgs/shop/cucumber_icon.png') no-repeat;
+	width:31px;
+	height:25px;
+	float:left;
+	padding-left:10px;
+}
+.yacht_div_icon {
+	background: url('/imgs/shop/yacht_icon.png') no-repeat;
+	width:31px;
+	height:25px;
+	float:left;
+	padding-left:10px;
+}
+.diamond_div_icon {
+	background: url('/imgs/shop/diamond_icon.png') no-repeat;
+	width:31px;
+	height:25px;
+	float:left;
+	padding-left:10px;
+}
+.golden_rings_div_icon {
+	background: url('/imgs/shop/golden_icon.png') no-repeat;
+	width:31px;
+	height:25px;
+	float:left;
+	padding-left:10px;
+}
+/*---- END OF SELL DESIGN ----*/
+
+/* 
+########################
+END OF MAIN VIEW DESIGN
+########################
+ */
+/* 
+---------------------------
+MORE INFO ABOUT AREAS DESIGN
+---------------------------
+*/
+.more_expenses_div {
+	width:90%;
+	margin:0 auto;
+	color:#042838;
+	
+}
+.more_expenses_div table {
+	width:100%;
+	margin:0 auto;
+}
+/* 
+---------------------------
+END OF MORE INFO ABOUT AREAS DESIGN
+---------------------------
+*/
+/* 
+---------------------------
+MESSAGES DESIGN
+---------------------------
+ */
+#suc_send {
+	color: #488850;
+	font-weight: bold;
+	text-align: center;
+}
+a.redirect_tomessview {
+	text-decoration:none;
+}
+a.redirect_tomessview:hover .mess_conversations {
+	background:#c1c1c1;
+}
+a.redirect_tomessview:hover .un_read_mess {
+	background:#3EA6C0;
+}
+.mess_conversations {
+	overflow:hidden;
+	clear:both;
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:10px;
+	padding-right:10px;
+	margin-top:2px;
+	display: block;
+}
+.fav_pic {
+	float:left;
+	padding-right:20px;
+}
+.fav_pic  img {
+	border:0;
+	width:55px;
+	height:55px;
+}
+.fav_name  a{
+	font-weight:bold;
+	text-decoration:none;
+	color:#fff;
+	font-size:16px;
+	font-family:tahoma;
+}
+.mess_name {
+	color:#1D92A1;
+	font-size:16px;
+	font-weight:bold;
+	font-family:tahoma;
+}
+.row_mess_lm {
+	color:#1D92A1;
+	padding-top:5px;
+	display: block;
+}
+.mess_date {
+	float:right;
+	color:#fff;
+	padding-right:10px;
+}
+.un_read_mess {
+	overflow:hidden;
+	clear:both;
+	padding-top:10px;
+	padding-bottom:10px;
+	padding-left:20px;
+	background:#67a2bd;
+	margin-top:2px;
+	display: block;
+}
+.un_read_mess .mess_name {
+	color: #fff;
+}
+.un_read_mess .row_mess_lm {
+	color: #fff;
+}
+.messages_container {
+	background:#fff;
+	width:90%;
+	height:500px;
+	padding-left:20px;
+	padding-right:20px;
+	overflow-y: scroll;
+	border:2px solid #D8D8D8;
+	padding-top:20px;
+	padding-bottom:20px;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+.one_message {
+	overflow:hidden;
+	clear:both;
+	padding-top:10px;
+	font-family:tahoma;
+}
+.bash_message {
+	font-size:14px;
+	font-family:tahoma;
+	text-align:justify;
+	width:950px;
+	color:#000;
+	padding-left:65px;
+}
+.write_mess {
+	overflow: hidden;
+	clear: both;
+	width: 95%;
+	margin: 0 auto;
+	padding-top: 10px;
+}
+.write_mess #mess_content {
+	width: 99%;
+}
+.write_mess #mess_button_send {
+	width: 99.5%;
+	height: 25px;
+	background: #0BACD3;
+	margin-top: 5px;
+}
+#mess_button_send {
+	background: none;
+	border: 0;
+	color: #ffffff;
+}
+ /* 
+---------------------------
+END OF MESSAGES DESIGN
+---------------------------
+ */
+ 
+/*
+---------------------------
+ADMIN DESIGN
+---------------------------
+*/
+#add_build_cat {
+	width:65%;
+	margin-right:5%;
+	margin-top:30px;
+	float:right;
+	color:#000;
+	background:#ccc;
+	padding-top:10px;
+	padding-left:10px;
+	padding-bottom:10px;
+}
+#add_build_cat h3 {
+	color:#000;
+}
+#add_build_cat span, #admin_login span {
+	color:red;
+}
+#admin_login {
+	color:#000;
+	width:90%;
+	margin:0 auto;
+}
+#admin_left_menu {
+	width:20%;
+	background:#cccccc;
+	margin-left:5%;
+	margin-top:30px;
+	padding-right:10px;
+	padding-bottom:10px;
+	color:#595252;
+	font-size:15px;
+	font-family:Tahoma;
+	float:left;
+}
+#admin_left_menu ul li {
+	line-height:30px;
+}
+#admin_left_menu ul li a {
+	text-decoration:none;
+	color:#1485B6;
+	font-size:17px;
+}
+#admin_left_menu ul li {
+	list-style-image:url('/../imgs/index/bullet.png');
+}
+#admin_left_menu ul li a:hover {
+	color:#423434;
+}
+#admin_home {
+	width:65%;
+	margin-right:5%;
+	margin-top:30px;
+	float:right;
+	color:#000;
+	background:#ccc;
+	padding-top:10px;
+	padding-left:10px;
+	padding-bottom:10px;
+}
+#ul_dbs {
+	display:none;
+}
+#ul_admins {
+	display:none;
+}
+/*
+---------------------------
+END OF ADMIN DESIGN
+---------------------------
+*/
+/*
+-----------------------------------------
+		# PROFILES'S DESIGN #
+-----------------------------------------
+*/
+#user_profile {
+	padding-left:20px;
+	padding-top:20px;
+	padding-bottom:20px;
+	overflow: hidden;
+	clear:both;
+}
+.up_avatar_div img {
+	border-radius: 150px;
+	-webkit-border-radius: 150px;
+	-moz-border-radius: 150px;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+}
+.upa_link_div {
+	padding-top: 10px;
+}
+.upa_icon {
+	background: url('/imgs/profile/prof_pic_icon.png') no-repeat;
+	width: 24px;
+	height: 24px;
+	float: left;
+	padding-left:10px;
+}
+.upa_link_div a {
+	text-decoration:none;
+	color:#1e6281;
+}
+#upload_avatar_picture {
+	background: #bababa;
+	width: 380px;
+	padding:10px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	position:fixed;
+	top: 40%;
+	left: 50%;
+	margin-top: -100px;
+	margin-left: -180px;
+	text-align: left;
+}
+#upload_avatar_picture img {
+	overflow:hidden;
+	clear: both;
+}
+.uap_left {
+	width:190px;
+	float: left;
+}
+.uap_text {
+	color:#1e6281;
+}
+#user_profile_left {
+	width: 35%;
+	float: left;
+}
+#user_profile_right {
+	width:65%;
+	float: left;
+}
+.one_user_condition {
+	height: 40px;
+	color: #1e6281;
+}
+.send_message_pb input {
+	background: none;
+	border: 0;
+	width: 130px;
+	height: 26px;
+	padding-left:20px;
+	font-size:15px;
+	color: #fff;
+}
+.send_message_pb {
+	background: url('/imgs/profile/send_mess_button.png') no-repeat;
+	width: 130px;
+	height: 28px;
+}
+#send_message_overlay {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.6);
+	z-index: 100;
+	color:#fff;
+	visibility:hidden;
+}
+/*
+-----------------------------------------
+		# END OF PROFILES'S DESIGN #
+-----------------------------------------
+*/
+/*
+-----------------------------------------
+		# FIND JOB DESIGN #
+-----------------------------------------
+*/
+.no_job_education {
+	color:#345e67;
+	text-align: center;
+	padding-bottom:20px;
+}
+.job_offers {
+	width:90%;
+	margin: 0 auto;
+	padding-bottom: 25px;
+}
+/*
+-----------------------------------------
+		# END OF FIND JOB DESIGN #
+-----------------------------------------
+*/
+/*
+-----------------------------------------
+		# JOB DESIGN #
+-----------------------------------------
+*/
+#job {
+	padding-top:10px;
+	overflow: hidden;
+	clear: both;
+}
+.job_pixel_art {
+	background: url('/imgs/university/briefcase_job.png') no-repeat;
+	width:180px;
+	height:160px;
+	margin-top:20px;
+	margin-left:20px;
+}
+.work_pixel_art {
+	background: url('/imgs/university/work.png') no-repeat;
+	width:180px;
+	height:160px;
+	margin-top:20px;
+	margin-left:20px;
+}
+.quitjob_pixel_art {
+	background: url('/imgs/university/quit_job.png') no-repeat;
+	width:180px;
+	height:160px;
+	margin-top:20px;
+	margin-left:20px;
+}
+/*
+-----------------------------------------
+		# END OF JOB DESIGN #
+-----------------------------------------
+*//*-----------------------------------------		
+# FOOTER DESIGN 
+#-----------------------------------------*/
+#main_footer {	width: 80%;	color: #356C79;	margin: 0 auto;	padding-bottom: 10px;}
+.main_footer_content {	float: right;}
+.main_footer_content ul {	padding:0;	margin:0;	list-style-type: none;}
+.main_footer_content ul li {	padding-left: 5px;	display: inline-block;}
+.main_footer_content ul li a {	text-decoration: none;	color: #356C79;}
+/*-----------------------------------------		
+# END OF FOOTER DESIGN #
+-----------------------------------------*/
+/*
+-----------------------------------------
+		# CONTACTS DESIGN #
+-----------------------------------------
+*/
+#contacts {
+	background: #cccccc;
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 10px;
+	padding: 10px;
+	color: #414141;
+	text-align: center;
+}
+#contacts form {
+	width: 600px;
+	margin: 0 auto;
+}
+#contacts form input {
+	width: 600px;
+	height: 25px;
+}
+#contacts form textarea {
+	width: 600px;
+	height: 250px;
+}
+
+@media screen and (max-width:1270px) {
+.area_calculate {
+		float:none;
+	}
+}
+@media screen and (max-width:1124px) {
+	.quote_top, .quote_bottom {
+		font-size:32px;
+	}
+	.area_calculate {
+		float:none;
+	}
+}
+@media screen and (max-width:820px) {
+	#header {
+		height:0px;
+	}
+	#brand {
+		margin-top:-70px;
+		background:#4f585e;
+		width:100%;
+		height:70px;
+		padding:0;
+	}
+	#logHeader {
+		height:180px;
+	} 
+	.logHeaderTitle {
+		padding-left:5%;
+	}
+	.menu {
+		margin-top:25px;
+		background:#6BA8D0;
+		width:100%;
+		height:70px;
+		padding:0;
+	}
+	.menu ul {
+		width:75%;
+		margin:0 auto;
+	}
+	.logHeaderContainer {
+		width:100%;
+	}
+	.title {
+		margin-left:5%;
+		margin-top:5px;
+	}
+	.subtitle {
+		margin-left:5%;
+		margin-top:5px;
+	}
+	.home_nav {}
+	.home_nav ul {
+		margin-top:70px;
+		background:#a9a9a9;
+		height:90px;
+		float:none;
+		padding:0;
+	}
+	.home_nav li {
+		display:inline;
+	}
+	.home_nav li input {
+		width:100%;
+		border-bottom:1px dotted #ccc;
+		background:#a9a9a9;
+	}
+	.home_nav a {
+		color:#CCC;
+	}
+	.login_button {
+		background:none;	
+		width:100%;
+	}
+	.reg_button {
+		background:none;
+		width:100%;
+	}
+	.space_div {
+		padding-top:100px;
+	}
+	.quote_container {
+		padding-top:30%;
+	}
+	.quote_top, .quote_bottom {
+		font-size:20px;
+	}
+	.quote_author {
+		font-size:18px;
+	}
+	.one_column {
+		float:none;
+		width:90%;
+		margin:0 auto;
+		padding-top:5%;
+	}
+	.column_title {
+		font-size:20px;
+		padding-top:3%;
+	}
+	.column_text {
+		padding-top:2%;
+	}
+	.rat_race_text {
+		padding-left:2%;
+		padding-right:2%;
+		font-size:18px;
+	}
+	.ratRaceSymbol {
+		background:none;
+	}
+	#admin_left_menu, #admin_home {
+		float:none;
+		width:90%;
+		margin:0 auto;
+		margin-top:5px;
+	}
+	#left_menu {
+		width:90%;
+		float:none;
+		font-size:20px;
+	}
+	.buy_area_div_container {
+		width:100%;
+		height:200px;
+		top: 50%;
+		left: 0%;
+		margin-top: -100px;
+		margin-left:0px;
+	}
+	.area_calculate {
+		float:none;
+	}
+	#main_container_view {
+		width:90%;
+		float:none;
+		margin-left:5%;
+	}
+	.bm_left_side, .bm_right_side {
+		float:none;
+	}
+	.bm_right_side {
+		padding-left:30px;
+	}
+}
+@media screen and (max-width:700px) {
+	.menu {
+		width:100%;
+		height:auto;
+	}
+	.menu ul {
+		width:70%;
+		float:none;
+	}
+	.menu ul li  {
+		float:none;
+		
+	}
+	#logHeader {
+		height:300px;
+	}
+	/* RESPONSIVE SHOP */
+	.middle_top_shop {
+		width:95%;
+		height:auto;
+	}
+	.middle_top_shop .shop_div_icon, .shop_product_title, .shop_user_title, .shop_quantity_title, .shop_prize_title {
+		width:100%;
+		float:none;
+		text-align:center;
+	}
+	.shop_one_product {
+		width:95%;
+		padding-bottom:10px;
+	}
+	.shop_one_product .shop_product_title {
+		font-size:22px;
+		width:100%;
+		float:none;
+		text-align:center;
+	}
+	.shop_one_product .shop_user_title {
+		font-size:20px;
+		width:100%;
+		float:none;
+		text-align:center;
+	}
+	.shop_one_product .shop_quantity_title {
+		font-size:20px;
+		width:100%;
+		float:none;
+		text-align:center;
+	}
+	.shop_one_product .shop_prize_title {
+		font-size:20px;
+		width:100%;
+		float:none;
+		text-align:center;
+	}
+	.shop_one_product .shop_q_field {
+		width:100%;
+		float:none;
+		text-align:center;
+	}
+	.shop_one_product .shop_buy_button {
+		background-image:none;
+		background:#74b6c6;
+		height:30px;
+		width:100%;
+	}
+	.shop_one_product .shop_buy_button input {
+		width:100%;
+		height:30px;
+		text-align:center;
+		font-size:25px;
+	}
+	.shop_q_field .dish_price  {
+		width:30%;
+		margin:0 auto;
+		font-size:20px;
+	}
+}
+@media screen and (max-width:480px) {
+	#brand {
+		width:100%;
+		text-align:center;
+		padding:0;
+		margin-top:-70px;
+	}
+	.home_nav {}
+	.home_nav ul {
+		float:none;
+		margin-top:70px;
+		background:#a9a9a9;
+	}
+	.home_nav li {}
+	.home_nav a {
+		display:block;
+		border-bottom:1px dotted #ccc;
+		margin:0;
+		padding:3px;
+	}
+	.quote_author {
+		font-size:15px;
+	}
+	.buy_area_div_container {
+		width:100%;
+		height:200px;
+		top: 50%;
+		left: 0%;
+		margin-top: -100px;
+		margin-left:0px;
+	}
+	.area_calculate {
+		float:none;
+	}
+	.area {
+		margin-left:5px;
+	}
+	/* LOGIN */
+	#login_form {
+		position: fixed;
+		top: 30%;
+		left: 65%;
+		margin-top: -100px;
+		margin-left: -250px;
+		width:90%;
+	}
+	.login_top {
+		background:#6CB4D2;
+		width:90%;
+		height:66px;
+		-moz-border-top-left-radius:10px;
+		-moz-border-top-right-radius:10px;
+		-webkit-border-top-right-radius:10px;
+		-webkit-border-top-left-radius:10px;
+		margin:0 auto;
+	}
+	.login_middle {
+		background:#fff repeat-y;
+		width:90%;
+		margin:0 auto;
+	}
+	.login_bottom {
+		background:#fff no-repeat;
+		width:90%;
+		height:8px;
+		margin:0 auto;
+	}
+	.login_title {
+		font-size:16px;
+		text-align:center;
+		padding-top:5px;
+	}
+	.login_icon {
+		background:url('/imgs/index/login_title_icon.png') no-repeat;
+		width:30px;
+		height:30px;
+		margin:0 auto;
+		margin-top:5px;
+	}
+	.login_middle form input {
+		background:none;
+		border:0;
+	}
+	.login_forms {
+		padding-top:25px;
+		text-align:center;
+	}
+	.login_username {
+		background:#EDEDED no-repeat;
+		width:98%;
+		height:30px;
+		margin:0 auto;
+		bordeR:1px solid #797878;
+	}
+	.login_password {
+		background:#EDEDED no-repeat;
+		width:98%;
+		height:30px;
+		margin:0 auto;
+		margin-top:10px;
+		bordeR:1px solid #797878;
+	}
+	.login_enter_button {
+		background:#6CB4D2 no-repeat;
+		width:90%;
+		height:27px;
+		margin:0 auto;
+		margin-top:10px;
+		border-radius:10px;
+		-moz-border-radius:10px;
+		-webkit-border-radius:10px;
+	}
+	.login_username input {
+		width:90%;
+		height:30px;
+		margin-left:30px;
+		font-size:20px;
+	}
+	.login_password input {
+		width:90%;
+		height:30px;
+		margin-left:30px;
+		font-size:20px;
+	}
+	.login_enter_button input {
+		width:90%;
+		height:27px;
+		text-align:center;
+		color:#fff;
+	}
+	.casino_left_prizes {
+		float:none;
+	}
+}
